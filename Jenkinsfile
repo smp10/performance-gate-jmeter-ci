@@ -20,12 +20,12 @@ pipeline {
       steps {
         perfReport (
           sourceDataFiles: 'logs/results.jtl',
-          errorFailedTreshold: 1.0,
-          errorUnstableTreshold: 0.0,
+          errorFailedThreshold: 1.0,
+          errorUnstableThreshold: 0.0,
           // Double numbers (no quotes!)
-          relativeFailedTresholdPositive: 1.3,
-          relativeUnstableTresholdPositive: 1.2,
-          modeOfTreshold: true,
+          relativeFailedThresholdPositive: 1.3,
+          relativeUnstableThresholdPositive: 1.2,
+          modeOfThreshold: true,
           configType: 'ART'
           )
       }
